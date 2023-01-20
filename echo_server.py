@@ -36,9 +36,8 @@ def start_mutithreaded_server():
             thread.run()
 
     
-start_server()
-# #start_threaded_server()
-
+# start_server()
+start_mutithreaded_server()
 
 # echo "Foobar" | nc localhost 8080 -q 1
 
