@@ -3,7 +3,7 @@ import socket
 BYTES_TO_READ  = 4096  
 
 def get(host, port):
-    request = b"GET / HTTP/1.1\n\Host: " + host.encode('utf-8') + b"\n\n"
+    request = b"GET / HTTP/1.1\nHost: " + host.encode('utf-8') + b"\n\n"
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.connect((host, port))
     s.send(request)
